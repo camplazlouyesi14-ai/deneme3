@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi Ki Doğdun Azra 🌙</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #0b1d3a, #1c3b5a);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ARKA PLAN KAYAN BULUT/DAĞ EFECTİ */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: url('images/clouds.png') repeat-x;
+            background-size: cover;
+            animation: moveBg 60s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes moveBg {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* APPA FOTOĞRAFI - YÜZEN & PULSING */
+        .appa-container {
+            position: relative;
+            height: 300px;
+            margin: 30px 0;
+        }
+
+        .appa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            border-radius: 20px;
+            animation: floatScale 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatScale {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -60%) scale(1.05); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+
+        .elements {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .element {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, background 0.3s;
+        }
+
+        .element:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.25);
+        }
+
+        .message {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+        }
+
+        .message p {
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .appa { width: 180px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ARKA PLAN EFECTİ -->
+    <div class="background"></div>
+
+    <header>
+        <h1>İyi Ki Doğdun Azra 🌊🔥🌪️🌱</h1>
+        <h2>Dört element, tek denge… ve bugün senin günün</h2>
+
+        <!-- APPA FOTOĞRAFI ORTADA YÜZEN -->
+        <div class="appa-container">
+            <img src="images/appa.png" alt="Appa" class="appa">
+        </div>
+    </header>
+
+    <section class="elements">
+        <div class="element">🌊 Su</div>
+        <div class="element">🔥 Ateş</div>
+        <div class="element">🌪️ Hava</div>
+        <div class="element">🌱 Toprak</div>
+    </section>
+
+    <section class="message">
+        <p>
+            Sevgili Azra,<br><br>
+            Avatar evreninde denge ne kadar önemliyse,  
+            benim hayatımda da sen o kadar değerlisin.  
+            Gülüşün su gibi sakin,  
+            kalbin ateş gibi güçlü,  
+            ruhun hava gibi özgür,  
+            duruşun toprak gibi sağlam 💙<br><br>
+            İyi ki varsın, iyi ki doğdun.
+        </p>
+    </section>
+
+    <footer>
+        — Senin Avatarın Yunus ✨
+    </footer>
+
+</body>
+</html>
